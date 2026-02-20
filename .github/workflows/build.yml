@@ -194,12 +194,12 @@ jobs:
       - name: Install dependencies
         run: pnpm i --frozen-lockfile
 
-      #- name: Checkout Product Version Resource
-      #  uses: actions/checkout@v4
-      #  with:
-      #    repository: VOICEVOX/voicevox_resource
-      #    ref: ${{ env.VOICEVOX_RESOURCE_VERSION }}
-      #    path: resource
+      - name: Checkout Product Version Resource
+        uses: actions/checkout@v4
+        with:
+          repository: VOICEVOX/voicevox_resource
+          ref: ${{ env.VOICEVOX_RESOURCE_VERSION }}
+          path: resource
 
       - name: Create and replace software resources
         run: |
