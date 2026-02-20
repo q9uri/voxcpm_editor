@@ -1,7 +1,7 @@
 {
-  "name": "voicevox",
+  "name": "voxcpm_editor",
   "version": "999.999.999",
-  "author": "Hiroshiba Kazuyuki",
+  "author": "q9uri",
   "private": true,
   "main": "./dist/main.js",
   "type": "module",

@@ -13,7 +13,7 @@ const openapiDir = path.join(import.meta.dirname, "..", "src", "openapi");
 const openapiJsonPath = path.join(import.meta.dirname, "..", "openapi.json");
 
 async function main() {
-  const engineBase = process.argv[2] || "http://127.0.0.1:50021";
+  const engineBase = process.argv[2] || "http://127.0.0.1:11022"; //50021
   console.log("Engine base URL:", engineBase);
 
   await assertDevelopmentEngine(engineBase);
